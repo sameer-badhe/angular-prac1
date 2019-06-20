@@ -4,6 +4,47 @@
     Angular Built-in Pipe
   </h1>
 
-  <div>Currency Pipe</div>
-  <div>{{ 3098 | currency:'GBP' }}</div>
+  <div>
+    <div>Currency Pipe</div>
+    {{ 3098 | currency:'GBP' }}<br />
+    {{ 3098 | currency:'USD' }}
+  </div>
+  <hr />
+  <div>
+    <div>Date Pipe</div>
+    {{ date | date:'d/M/y' }}<br />
+    {{ date | date:'shortDate' }}<br />
+    {{ date | date:'fullDate' }}<br />
+  </div>
+  <hr />
+  <div>
+    <div>Decimal Pipe</div>
+    {{ 3.9873 | number:'2.1-2' }}
+  </div>
+  <hr />
+  <div>
+    <div>Json Pipe</div>
+    {{ jsonVal | json}}
+  </div>
+  <hr />
+  <div>
+    <div>UpperCase Pipe</div>
+    {{ 'Sameer' | uppercase }}
+  </div>
+  <hr />
+  <div>
+    <div>LowerCase Pipe</div>
+    {{ 'SAMEER' | lowercase }}
+  </div>
+  <hr />
+  <div>
+    <div>Percent Pipe</div>
+    {{ 0.39086 | percent:'1.1-2' }}
+  </div>
+  <hr />
+  <div>
+    <div>Slice Pipe</div>
+    {{ [1,2,3,4,5,6] | slice:1:4}}
+  </div>
+  <hr />
 </div>
