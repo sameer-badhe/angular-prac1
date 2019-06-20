@@ -7,4 +7,11 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "CodeSandbox";
+  date = new Date();
+  jsonVal = {
+    obj: {
+      obj1: { name: "Sam" },
+      obj2: { name: "Ram" }
+    }
+  };
 }
